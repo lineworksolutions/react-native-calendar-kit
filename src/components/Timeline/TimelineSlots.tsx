@@ -242,7 +242,7 @@ const TimelineSlots = ({
 
   return (
     <ScrollView
-      ref={timelineVerticalListRef}
+      ref={timelineVerticalListRef as any}
       waitFor={Platform.OS === 'android' ? pinchRef : undefined}
       showsVerticalScrollIndicator={false}
       scrollEventThrottle={16}
